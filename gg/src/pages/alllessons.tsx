@@ -10,12 +10,13 @@ import {Bulla} from '../components/Hook'
 import React from 'react';
 import ShareIcon from '@mui/icons-material/Share';
 import { Thorsu } from '../reactshare/socialmediasharing';
+import {Danny} from "../props/Myprops"
 
 export const LabTabs:React.FC<{}>=()=>{ 
-  let [value, setValue] = React.useState('1');
+  let [value, setValue] = React.useState('3');
 
-  const handleChange = (event: React.SyntheticEvent, newValue: string) => {
-    setValue(newValue);
+  const handleChange = (event: React.SyntheticEvent, newvalue: string) => {
+    setValue(newvalue);
   }
 
   return <>
@@ -31,7 +32,7 @@ export const LabTabs:React.FC<{}>=()=>{
               
             <TabPanel value={'1'}>  <Bulla/>  </TabPanel>
             <TabPanel value={'2'}>  <Thorsu/>  </TabPanel>
-            <TabPanel value={'3'}>   lesson 3 </TabPanel>
+            <TabPanel value={'3'}>   <Danny/> </TabPanel>
             <TabPanel value={'4'}>   lesson 4 </TabPanel>
           </TabContext>
 
