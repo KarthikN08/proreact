@@ -6,11 +6,11 @@ import TabPanel from '@mui/lab/TabPanel';
 import Tabs from '@mui/material/Tabs';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import PersonPinIcon from '@mui/icons-material/PersonPin';
-import {Bulla} from '../components/Hook'
+import {Bulla} from '../components/grab-user-input/Hook'
 import React from 'react';
 import ShareIcon from '@mui/icons-material/Share';
-import { Thorsu } from '../reactshare/socialmediasharing';
-import {Danny} from "../props/Myprops"
+import { Thorsu } from '../components/reactshare/socialmediasharing';
+import {Danny} from "../components/props/Myprops"
 
 export const LabTabs:React.FC<{}>=()=>{ 
   let [value, setValue] = React.useState('3');
