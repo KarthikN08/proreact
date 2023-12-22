@@ -27,9 +27,7 @@ import { Link, useNavigate } from "react-router-dom"
 
             <Button color="secondary" onClick={pinku}>Login</Button>
 
-            <Link to="/PROJECTS/register">
-            <Button color="secondary">Register</Button>
-            </Link>
+          
 
 
          </Grid>
